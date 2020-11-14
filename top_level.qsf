@@ -355,32 +355,10 @@ set_location_assignment PIN_F16 -to ARDUINO_reset_n_N
 
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "MAX 10 DE10 - Lite"
-set_global_assignment -name VHDL_FILE MUX2TO1.vhd
-set_global_assignment -name SDC_FILE top_level.SDC
-set_global_assignment -name VHDL_FILE top_level.vhd
-set_global_assignment -name SDC_FILE top_level.sdc
-set_global_assignment -name SOURCE_FILE top_level.qsf
-set_global_assignment -name VHDL_FILE SevenSegment_decoder.vhd
-set_global_assignment -name VHDL_FILE SevenSegment.vhd
-set_global_assignment -name VHDL_FILE binary_bcd.vhd
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name VHDL_FILE MUX4TO1.vhd
-set_global_assignment -name VHDL_FILE SYNCH.vhd
-set_global_assignment -name VHDL_FILE Save_Register.vhd
-set_global_assignment -name VHDL_FILE debounce.vhd
-set_global_assignment -name VERILOG_FILE ADC_Conversion.v
-set_global_assignment -name VHDL_FILE voltage2distance_array2.vhd
-set_global_assignment -name VHDL_FILE tb_top_level.vhd
-set_global_assignment -name VHDL_FILE tb_MUX2TO1.vhd
-set_global_assignment -name VHDL_FILE tb_debounce.vhd
-set_global_assignment -name VHDL_FILE tb_ADC_data.vhd
-set_global_assignment -name VHDL_FILE LUT_pkg.vhd
-set_global_assignment -name VHDL_FILE averager256.vhd
-set_global_assignment -name VHDL_FILE ADC_Data.vhd
-set_global_assignment -name VHDL_FILE ADC_Conversion_wrapper.vhd
 set_location_assignment PIN_P11 -to MAX10_CLK1_50
 set_location_assignment PIN_B8 -to KEY[0]
 set_location_assignment PIN_A7 -to KEY[1]
@@ -464,4 +442,27 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[32]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[33]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[34]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[35]
+set_global_assignment -name QIP_FILE adc_qsys/synthesis/adc_qsys.qip
+set_global_assignment -name VHDL_FILE MUX2TO1.vhd
+set_global_assignment -name SDC_FILE top_level.SDC
+set_global_assignment -name VHDL_FILE top_level.vhd
+set_global_assignment -name SDC_FILE top_level.sdc
+set_global_assignment -name SOURCE_FILE top_level.qsf
+set_global_assignment -name VHDL_FILE SevenSegment_decoder.vhd
+set_global_assignment -name VHDL_FILE SevenSegment.vhd
+set_global_assignment -name VHDL_FILE binary_bcd.vhd
+set_global_assignment -name VHDL_FILE MUX4TO1.vhd
+set_global_assignment -name VHDL_FILE SYNCH.vhd
+set_global_assignment -name VHDL_FILE Save_Register.vhd
+set_global_assignment -name VHDL_FILE debounce.vhd
+set_global_assignment -name VERILOG_FILE ADC_Conversion.v
+set_global_assignment -name VHDL_FILE voltage2distance_array2.vhd
+set_global_assignment -name VHDL_FILE tb_top_level.vhd
+set_global_assignment -name VHDL_FILE tb_MUX2TO1.vhd
+set_global_assignment -name VHDL_FILE tb_debounce.vhd
+set_global_assignment -name VHDL_FILE tb_ADC_data.vhd
+set_global_assignment -name VHDL_FILE LUT_pkg.vhd
+set_global_assignment -name VHDL_FILE averager256.vhd
+set_global_assignment -name VHDL_FILE ADC_Data.vhd
+set_global_assignment -name VHDL_FILE ADC_Conversion_wrapper.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
