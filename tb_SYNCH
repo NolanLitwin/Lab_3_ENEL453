@@ -1,0 +1,53 @@
+-- Testbench automatically generated online
+-- at https://vhdl.lapinoo.net
+-- Generation date : 24.10.2020 22:05:59 UTC
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity tb_SYNC is
+end tb_SYNC;
+
+architecture tb of tb_SYNC is
+
+    component SYNC
+        port (clk  : in std_logic;
+              in1  : in std_logic_vector (9  downto 0);
+              out1 : out std_logic_vector (9 downto 0));
+    end component;
+
+    signal clk  : std_logic;
+    signal in1  : std_logic_vector (9  downto 0);
+    signal out1 : std_logic_vector (9 downto 0);
+
+	constant time_delay       : time := 20 ns;
+	
+begin
+
+    dut : SYNC
+    port map (clk  => clk,
+              in1  => in1,
+              out1 => out1);
+
+	clk_stim : process
+    begin
+      clk <= '0'; -- this process switches clock signal every 20ns
+      wait for time_delay;
+	  clk <= '1';
+	  wait for time_delay;
+    end process;
+	
+    stimuli : process
+    begin
+        -- EDIT Adapt initialization as needed
+        in1 <= (others => '0');
+
+        -- EDIT Add stimuli here
+		wait for time_delay *4;
+		in1 <= "1111111111";
+		wait for time_delay *4;
+		in1 <= "1010101010";
+        wait;
+    end process;
+
+end tb;
