@@ -101,7 +101,7 @@ begin
    Num_Hex3 <= output(15 downto 12);
    Num_Hex4 <= "0000";
    Num_Hex5 <= "0000";
-   DP_in    <= "000000"; -- position of the decimal point in the display (1=LED on,0=LED off)
+   --DP_in    <= "000000"; -- position of the decimal point in the display (1=LED on,0=LED off)
    Blank    <= "110000"; -- blank the 2 MSB 7-segment displays (1=7-seg display off, 0=7-seg display on)
 
                 
@@ -169,8 +169,18 @@ MUX4TO1_ins: MUX4TO1
 		s	 => sw(9 downto 8),
 		mux_out => mux_out
 		);
+
+MUX4TO1_ins_DP: MUX4TO1
+	PORT MAP(
+		in1(5 downto 0)		=> "000000",
+		in2(5 downto 0) 		=> "000100",
+		in3(5 downto 0) 		=> "001000",
+		in4(5 downto 0) 		=> "000000",
+		s 					 		=> sw(9 downto 8),
+		mux_out(5 downto 0)	=> DP_in
+		);
 		
-SaveReg_ins: SaveReg
+SaveReg_ins: SaveReg	
 	PORT MAP(
 		clk => clk,
 		enable => enable,
