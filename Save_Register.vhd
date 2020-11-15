@@ -19,7 +19,7 @@ signal saved : std_logic_vector(15 downto 0);
 			begin
 				if (reset_n = '0') then
 					saved <= (others => '0');
-				elsif rising_edge(clk) and (enable = '0') then
+				elsif rising_edge(clk) and (enable = '1') then		--enable has been inverted for lab 3
 					saved <= toSave;
 				end if;
 				
