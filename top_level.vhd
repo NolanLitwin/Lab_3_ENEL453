@@ -18,12 +18,12 @@ architecture Behavioral of top_level is
 
 Signal Num_Hex0, Num_Hex1, Num_Hex2, Num_Hex3, Num_Hex4, Num_Hex5 : STD_LOGIC_VECTOR (3 downto 0):= (others=>'0');
 Signal DP_in, Blank:  STD_LOGIC_VECTOR (5 downto 0);
-Signal switch_inputs: STD_LOGIC_VECTOR (12 downto 0);
-Signal bcd:           STD_LOGIC_VECTOR(15 DOWNTO 0);
+Signal voltage, distance: STD_LOGIC_VECTOR (12 downto 0);
+Signal ADC_out:		STD_LOGIC_VECTOR(11 downto 0);
 Signal enable:			 STD_LOGIC;
 
 --Added ports for multiplexer
-signal in1, in2, in3, in4, mux_out, switch_inputs_ext:		 STD_LOGIC_VECTOR (15 downto 0);
+signal in1, in2, in3, in4, mux_out, output, switch_inputs, ADC_out_ext:		 STD_LOGIC_VECTOR (15 downto 0);
 
 Component SevenSegment is
     Port( Num_Hex0,Num_Hex1,Num_Hex2,Num_Hex3,Num_Hex4,Num_Hex5 : in  STD_LOGIC_VECTOR (3 downto 0);
@@ -95,16 +95,15 @@ Component debounce is
 End Component;
 
 begin
-   Num_Hex0 <= mux_out(3  downto  0); 
-   Num_Hex1 <= mux_out(7  downto  4);
-   Num_Hex2 <= mux_out(11 downto  8);
-   Num_Hex3 <= mux_out(15 downto 12);
+   Num_Hex0 <= output(3  downto  0); 
+   Num_Hex1 <= output(7  downto  4);
+   Num_Hex2 <= output(11 downto  8);
+   Num_Hex3 <= output(15 downto 12);
    Num_Hex4 <= "0000";
    Num_Hex5 <= "0000";
    DP_in    <= "000000"; -- position of the decimal point in the display (1=LED on,0=LED off)
    Blank    <= "110000"; -- blank the 2 MSB 7-segment displays (1=7-seg display off, 0=7-seg display on)
-   in1		<= bcd(15 downto 0);
-	in4(15 downto 0) <= x"5a5a";
+
                 
 SevenSegment_ins: SevenSegment  
 
@@ -125,17 +124,33 @@ SevenSegment_ins: SevenSegment
                           );
                                      
  
--- LEDR(9 downto 0) <=SW(9 downto 0); -- gives visual display of the switch inputs to the LEDs on board
-switch_inputs <= "00000" & SW(7 downto 0);
-switch_inputs_ext <= "00000000" & SW(7 downto 0);
+switch_inputs <= "00000000" & SW(7 downto 0);
+ADC_out_ext   <= "0000" & ADC_out(11 downto 0);
 
 binary_bcd_ins: binary_bcd                               
    PORT MAP(
       clk      => clk,                          
       reset_n  => reset_n,                                 
-      binary   => switch_inputs,    
-      bcd      => bcd         
+      binary   => voltage,    
+      bcd      => in3        
       );
+		
+binary_bcd_ins2: binary_bcd
+	PORT MAP(
+		clk      => clk,                          
+      reset_n  => reset_n,                                 
+      binary   => distance,    
+      bcd      => in2
+		);
+		
+ADC_Data_ins: ADC_Data
+	PORT MAP(
+		clk		=> clk,
+		reset_n	=> reset_n,
+		ADC_out 	=>	ADC_out,
+		voltage	=> voltage,
+		distance	=> distance
+		);
 		
 SYNC_ins	  : SYNC
 	PORT MAP(
@@ -147,10 +162,10 @@ SYNC_ins	  : SYNC
 
 MUX4TO1_ins: MUX4TO1
 	PORT MAP(
-		in1 => in1,
-		in2 => switch_inputs_ext,
+		in1 => switch_inputs,
+		in2 => in2,
 		in3 => in3,
-		in4 => in4,
+		in4 => ADC_out_ext,
 		s	 => sw(9 downto 8),
 		mux_out => mux_out
 		);
@@ -161,7 +176,7 @@ SaveReg_ins: SaveReg
 		enable => enable,
 		reset_n => reset_n,
 		toSave => mux_out,
-		output => in3
+		output => output
 		);
 		
 debounce_ins: debounce
