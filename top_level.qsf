@@ -457,10 +457,6 @@ set_global_assignment -name VHDL_FILE Save_Register.vhd
 set_global_assignment -name VHDL_FILE debounce.vhd
 set_global_assignment -name VERILOG_FILE ADC_Conversion.v
 set_global_assignment -name VHDL_FILE voltage2distance_array2.vhd
-set_global_assignment -name VHDL_FILE tb_top_level.vhd
-set_global_assignment -name VHDL_FILE tb_MUX2TO1.vhd
-set_global_assignment -name VHDL_FILE tb_debounce.vhd
-set_global_assignment -name VHDL_FILE tb_ADC_data.vhd
 set_global_assignment -name VHDL_FILE LUT_pkg.vhd
 set_global_assignment -name VHDL_FILE averager256.vhd
 set_global_assignment -name VHDL_FILE ADC_Data.vhd
