@@ -45,19 +45,6 @@ Component MUX4TO1 is
 End Component;
 --End of Multiplexer
 
---Added ADC
-Component ADC_Data is
-	Port(
-		clk		: IN STD_LOGIC;
-		reset_n	: IN STD_LOGIC;
-		ADC_raw	: OUT STD_LOGIC_VECTOR(11 downto 0);
-		ADC_out	: OUT STD_LOGIC_VECTOR(11 downto 0);
-		voltage	: OUT STD_LOGIC_VECTOR(12 downto 0);
-		distance	: OUT STD_LOGIC_VECTOR(12 downto 0)
-		);
-End Component;
---End of ADC
-
 Component binary_bcd IS
    PORT(
       clk     : IN  STD_LOGIC;                      --system clock

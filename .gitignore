@@ -132,3 +132,4 @@ adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v
 adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v
 db/prev_cmp_Lab_3_ENEL453.qmsg
 output_files/top_level.map.smsg
+db/Lab_3_ENEL453.quiproj.14052.rdr.flock
