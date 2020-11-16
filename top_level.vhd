@@ -34,6 +34,7 @@ End Component ;
 
 --Added Multiplexer
 Component MUX4TO1 is
+	GENERIC(N : Integer);
 	Port(
 		in1	  : IN  STD_LOGIC_VECTOR(15 downto 0);							 --input1 to Multiplexer
 		in2	  : IN  STD_LOGIC_VECTOR(15 downto 0);							 --input2 to Multiplexer
@@ -161,6 +162,7 @@ SYNC_ins	  : SYNC
 	);
 
 MUX4TO1_ins: MUX4TO1
+	GENERIC MAP(N => 15) 
 	PORT MAP(
 		in1 => switch_inputs,
 		in2 => in2,
@@ -171,6 +173,7 @@ MUX4TO1_ins: MUX4TO1
 		);
 
 MUX4TO1_ins_DP: MUX4TO1
+	GENERIC MAP(N => 15) 
 	PORT MAP(
 		in1(5 downto 0)		=> "000000",
 		in2(5 downto 0) 		=> "000100",

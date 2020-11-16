@@ -36,7 +36,7 @@ type temporary is array(integer range <>) of integer;
 
 
 signal tmp : temporary((2**N)-1 downto 1);
-signal tmp2: temporary((2**N)-1 downto 1);
+
 
 
 
@@ -72,10 +72,15 @@ begin
       end if;
    end process shift_reg;
 	
-	adder_reg : process(clk)
+	adder_reg : process(clk, reset_n)
 	begin
-		if(rising_edge(clk)) then
-		
+		if(reset_n = '0') then
+			LoopA2: for i in 1 to (2**N)-1 loop
+            tmp(i) <= 0;
+         end loop LoopA2;
+			
+			
+		elsif(rising_edge(clk)) then
 		   LoopB1: for i in 1 to (2**N)/2 loop
 				tmp(i) <= to_integer(unsigned(REG_ARRAY((2*i)-1)))  + to_integer(unsigned(REG_ARRAY(2*i))); -- grabs outputs from registers
 			end loop LoopB1;
