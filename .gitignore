@@ -214,3 +214,8 @@ db/top_level.(8).cnf.hdb
 db/top_level.(9).cnf.cdb
 db/top_level.(9).cnf.hdb
 Save_Register.vhd.bak
+output_files/top_level.cdf
+db/top_level.sgate.nvd
+db/top_level.npp.qmsg
+db/top_level.sgate.nvd
+db/top_level.sgate_sm.nvd
