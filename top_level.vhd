@@ -17,7 +17,7 @@ end top_level;
 architecture Behavioral of top_level is
 
 Signal Num_Hex0, Num_Hex1, Num_Hex2, Num_Hex3, Num_Hex4, Num_Hex5 : STD_LOGIC_VECTOR (3 downto 0):= (others=>'0');
-Signal DP_in, Blank:  STD_LOGIC_VECTOR (5 downto 0);
+Signal DP_in, Blank, blank_out:  STD_LOGIC_VECTOR (5 downto 0);
 Signal voltage, distance: STD_LOGIC_VECTOR (12 downto 0);
 Signal ADC_out:		STD_LOGIC_VECTOR(11 downto 0);
 Signal enable:			 STD_LOGIC;
@@ -36,12 +36,12 @@ End Component ;
 Component MUX4TO1 is
 	GENERIC(N : Integer);
 	Port(
-		in1	  : IN  STD_LOGIC_VECTOR(15 downto 0);							 --input1 to Multiplexer
-		in2	  : IN  STD_LOGIC_VECTOR(15 downto 0);							 --input2 to Multiplexer
-		in3	  : IN  STD_LOGIC_VECTOR(15 downto 0);	
-		in4	  : IN  STD_LOGIC_VECTOR(15 downto 0);	
+		in1	  : IN  STD_LOGIC_VECTOR(N downto 0);							 --input1 to Multiplexer
+		in2	  : IN  STD_LOGIC_VECTOR(N downto 0);							 --input2 to Multiplexer
+		in3	  : IN  STD_LOGIC_VECTOR(N downto 0);	
+		in4	  : IN  STD_LOGIC_VECTOR(N downto 0);	
 		s		  : IN  STD_LOGIC_VECTOR( 1 downto 0);							 
-		mux_out : OUT STD_LOGIC_VECTOR(15 downto 0)						 --output from Multiplexer
+		mux_out : OUT STD_LOGIC_VECTOR(N downto 0)						 --output from Multiplexer
 		);
 End Component;
 --End of Multiplexer
@@ -95,6 +95,18 @@ Component debounce is
 	);
 End Component;
 
+Component Blanker is
+	Port(
+	
+	hex_in     : in  STD_LOGIC_VECTOR (15 downto 0);
+   dp_in	     : in  STD_LOGIC_VECTOR (5 downto 0);
+   mode	     : in  STD_LOGIC_VECTOR (1 downto 0);
+	clk		  : in  STD_LOGIC;
+   blank_out  : out STD_LOGIC_VECTOR (5 downto 0)
+	
+	);
+End Component;
+
 begin
    Num_Hex0 <= output(3  downto  0); 
    Num_Hex1 <= output(7  downto  4);
@@ -121,7 +133,7 @@ SevenSegment_ins: SevenSegment
                             Hex4     => Hex4,
                             Hex5     => Hex5,
                             DP_in    => DP_in,
-									 Blank    => Blank
+									 Blank    => blank_out
                           );
                                      
  
@@ -173,14 +185,14 @@ MUX4TO1_ins: MUX4TO1
 		);
 
 MUX4TO1_ins_DP: MUX4TO1
-	GENERIC MAP(N => 15) 
+	GENERIC MAP(N => 5) 
 	PORT MAP(
-		in1(5 downto 0)		=> "000000",
-		in2(5 downto 0) 		=> "000100",
-		in3(5 downto 0) 		=> "001000",
-		in4(5 downto 0) 		=> "000000",
-		s 					 		=> sw(9 downto 8),
-		mux_out(5 downto 0)	=> DP_in
+		in1		=> "000000",
+		in2 		=> "000100",
+		in3 		=> "001000",
+		in4 		=> "000000",
+		s 		   => sw(9 downto 8),
+		mux_out	=> DP_in
 		);
 		
 SaveReg_ins: SaveReg	
@@ -198,6 +210,18 @@ debounce_ins: debounce
 		reset_n => reset_n,
 		button => button2,
 		result => enable
+	);
+	
+Blanker_ins: Blanker
+	PORT MAP(
+		hex_in => output,                                     
+      dp_in	 => DP_in,											
+      mode	 => sw(9 downto 8),
+		clk    => clk,
+		blank_out => blank_out
+		
+		
+		
 	);
 	
 
