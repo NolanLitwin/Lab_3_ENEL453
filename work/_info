@@ -1,0 +1,899 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/HardwareDesign/modelsim_ase/win32aloem
+Eadc_conversion_wrapper
+Z0 w1605481495
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 494
+Z3 dD:/School/ENEL 453/Lab_3_ENEL453
+Z4 8D:/School/ENEL 453/Lab_3_ENEL453/ADC_Conversion_wrapper.vhd
+Z5 FD:/School/ENEL 453/Lab_3_ENEL453/ADC_Conversion_wrapper.vhd
+l0
+L4 1
+VB?86R5UoX7S2lmRYIzIMS2
+!s100 KH;=f<oN;9WCTDm@QNBBJ1
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1605593566
+!i10b 1
+Z8 !s108 1605593566.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/ADC_Conversion_wrapper.vhd|
+Z10 !s107 D:/School/ENEL 453/Lab_3_ENEL453/ADC_Conversion_wrapper.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Asimulation
+R1
+R2
+Z13 DEx4 work 22 adc_conversion_wrapper 0 22 B?86R5UoX7S2lmRYIzIMS2
+!i122 494
+l32
+L29 69
+Vi2kh07eNkFdL;49Y3n6MP2
+!s100 [UfIN6H[XTWaW8?T=]85W2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+R13
+!i122 494
+l20
+L11 17
+V0hdTc:nn_LghWHZXNG^5S1
+!s100 NlobMAB?UNPBi]M<?UZWP1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eadc_data
+Z14 w1605576993
+Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 495
+R3
+Z16 8D:/School/ENEL 453/Lab_3_ENEL453/ADC_Data.vhd
+Z17 FD:/School/ENEL 453/Lab_3_ENEL453/ADC_Data.vhd
+l0
+L5 1
+V3n4fooJXC0K:cdF`D0ON[0
+!s100 `G?]RH?bRVP9QLBH_afZI1
+R6
+32
+R7
+!i10b 1
+R8
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/ADC_Data.vhd|
+Z19 !s107 D:/School/ENEL 453/Lab_3_ENEL453/ADC_Data.vhd|
+!i113 1
+R11
+R12
+Artl
+R13
+R15
+R1
+R2
+Z20 DEx4 work 8 adc_data 0 22 3n4fooJXC0K:cdF`D0ON[0
+!i122 495
+l62
+L15 91
+V4PJKQIG`Se:_:eSMWUG@W3
+!s100 ]N4X_z>Xc^_9oCnV?jCKi1
+R6
+32
+R7
+!i10b 1
+R8
+R18
+R19
+!i113 1
+R11
+R12
+Eaverager256
+Z21 w1605500716
+R15
+R1
+R2
+!i122 496
+R3
+Z22 8D:/School/ENEL 453/Lab_3_ENEL453/averager256.vhd
+Z23 FD:/School/ENEL 453/Lab_3_ENEL453/averager256.vhd
+l0
+Z24 L10 1
+V_CUX^0>VNcl[Eh>P]8Za^3
+!s100 PTQlD5=WnNQ@eNmcPZ4:[2
+R6
+32
+R7
+!i10b 1
+R8
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/averager256.vhd|
+Z26 !s107 D:/School/ENEL 453/Lab_3_ENEL453/averager256.vhd|
+!i113 1
+R11
+R12
+Artl
+R15
+R1
+R2
+DEx4 work 11 averager256 0 22 _CUX^0>VNcl[Eh>P]8Za^3
+!i122 496
+l49
+L26 76
+VPkAK<ehWibg:]TX`GIAA[0
+!s100 QSc9c5Wo^73=DkR;F69:E2
+R6
+32
+R7
+!i10b 1
+R8
+R25
+R26
+!i113 1
+R11
+R12
+Ebinary_bcd
+R0
+R15
+R1
+R2
+!i122 497
+R3
+Z27 8D:/School/ENEL 453/Lab_3_ENEL453/binary_bcd.vhd
+Z28 FD:/School/ENEL 453/Lab_3_ENEL453/binary_bcd.vhd
+l0
+L8 1
+V0:9zdOIA`o`LF2cmkOC^P3
+!s100 gQzX;=HeN]3[lj0[@2mb]2
+R6
+32
+R7
+!i10b 1
+R8
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/binary_bcd.vhd|
+Z30 !s107 D:/School/ENEL 453/Lab_3_ENEL453/binary_bcd.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R15
+R1
+R2
+DEx4 work 10 binary_bcd 0 22 0:9zdOIA`o`LF2cmkOC^P3
+!i122 497
+l27
+L17 68
+Vkk0@KWb1@9aV]WcFQb8d>1
+!s100 :^^564DjXHL3Y8gXOzS=f0
+R6
+32
+R7
+!i10b 1
+R8
+R29
+R30
+!i113 1
+R11
+R12
+Eblanker
+Z31 w1605561607
+R1
+R2
+!i122 498
+R3
+Z32 8D:/School/ENEL 453/Lab_3_ENEL453/blanker.vhd
+Z33 FD:/School/ENEL 453/Lab_3_ENEL453/blanker.vhd
+l0
+L5 1
+VKIg<0EBeoRhYf<Zn4Me4;3
+!s100 _d^kUGPjSzBe>O3RfoDjm0
+R6
+32
+R7
+!i10b 1
+R8
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/blanker.vhd|
+Z35 !s107 D:/School/ENEL 453/Lab_3_ENEL453/blanker.vhd|
+!i113 1
+R11
+R12
+Abehaviour
+R1
+R2
+Z36 DEx4 work 7 blanker 0 22 KIg<0EBeoRhYf<Zn4Me4;3
+!i122 498
+l15
+L14 41
+VSCG9Z7LM?hmFG@WXO5VmU0
+!s100 IK>GSeXb^gl;o_AH[:=Rl3
+R6
+32
+R7
+!i10b 1
+R8
+R34
+R35
+!i113 1
+R11
+R12
+Ccfg_tb_adc_data
+etb_ADC_Data
+atb
+R15
+R20
+DAx4 work 11 tb_adc_data 2 tb 22 2[P3WYUn^GW[A6j=>UhNJ0
+R1
+R2
+Z37 DEx4 work 11 tb_adc_data 0 22 [?lm[l=lU]Mf^aJ=5DKVD1
+!i122 507
+R0
+R3
+Z38 8D:/School/ENEL 453/Lab_3_ENEL453/tb_ADC_data.vhd
+Z39 FD:/School/ENEL 453/Lab_3_ENEL453/tb_ADC_data.vhd
+l0
+L78 1
+V<XCj?3HN7YR>koNkEm^`j0
+!s100 DhEC5OjeD1dD8XhZK6HkV3
+R6
+32
+Z40 !s110 1605593567
+!i10b 0
+Z41 !s108 1605593567.000000
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/tb_ADC_data.vhd|
+Z43 !s107 D:/School/ENEL 453/Lab_3_ENEL453/tb_ADC_data.vhd|
+!i113 1
+R11
+R12
+Ccfg_tb_blanker
+etb_Blanker
+atb
+R36
+DAx4 work 10 tb_blanker 2 tb 22 gaA>XUV;LTiz0<IaL]n<X0
+R1
+R2
+Z44 DEx4 work 10 tb_blanker 0 22 0S<RXQ^Q2SWeV;Qf?nML71
+!i122 513
+Z45 w1605590982
+R3
+Z46 8D:/School/ENEL 453/Lab_3_ENEL453/tb_blanker.vhd
+Z47 FD:/School/ENEL 453/Lab_3_ENEL453/tb_blanker.vhd
+l0
+L73 1
+Vo2zB9^czBDC5Oob^cX`TY3
+!s100 >S;mX[ga^4Xze[fHH>B4d2
+R6
+32
+Z48 !s110 1605593568
+!i10b 0
+Z49 !s108 1605593568.000000
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/tb_blanker.vhd|
+!s107 D:/School/ENEL 453/Lab_3_ENEL453/tb_blanker.vhd|
+!i113 1
+R11
+R12
+Edebounce
+Z51 w1605573363
+R1
+R2
+!i122 499
+R3
+Z52 8D:/School/ENEL 453/Lab_3_ENEL453/debounce.vhd
+Z53 FD:/School/ENEL 453/Lab_3_ENEL453/debounce.vhd
+l0
+L29 1
+VA4_9jf5@?Kg2N?8n[clGN2
+!s100 8J3A0ASTfPOOnhTe<Ezma3
+R6
+32
+R7
+!i10b 1
+R8
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/debounce.vhd|
+Z55 !s107 D:/School/ENEL 453/Lab_3_ENEL453/debounce.vhd|
+!i113 1
+R11
+R12
+Alogic
+R1
+R2
+DEx4 work 8 debounce 0 22 A4_9jf5@?Kg2N?8n[clGN2
+!i122 499
+l43
+L40 27
+Vl4VHI9>cE=VY@Ma9>ZzP]2
+!s100 n>S:eQmWnAWEzR4keYU>d2
+R6
+32
+R7
+!i10b 1
+R8
+R54
+R55
+!i113 1
+R11
+R12
+Plut_pkg
+R1
+R2
+!i122 500
+R21
+R3
+8D:/School/ENEL 453/Lab_3_ENEL453/LUT_pkg.vhd
+FD:/School/ENEL 453/Lab_3_ENEL453/LUT_pkg.vhd
+l0
+L4 1
+V3zf[5<SOEBfYf_QVY@Zd=0
+!s100 ol<58AU<a<mW@kzSLBH0J2
+R6
+32
+R40
+!i10b 1
+R8
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/LUT_pkg.vhd|
+!s107 D:/School/ENEL 453/Lab_3_ENEL453/LUT_pkg.vhd|
+!i113 1
+R11
+R12
+Emux2to1
+R0
+R1
+R2
+!i122 501
+R3
+Z56 8D:/School/ENEL 453/Lab_3_ENEL453/MUX2TO1.vhd
+Z57 FD:/School/ENEL 453/Lab_3_ENEL453/MUX2TO1.vhd
+l0
+L4 1
+VoQ7[^jKLJ52?kW53Nz3EN1
+!s100 ?B]`D<f;d>M0NU6;DQ`?G2
+R6
+32
+R40
+!i10b 1
+R41
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/MUX2TO1.vhd|
+Z59 !s107 D:/School/ENEL 453/Lab_3_ENEL453/MUX2TO1.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 7 mux2to1 0 22 oQ7[^jKLJ52?kW53Nz3EN1
+!i122 501
+l13
+L12 7
+VXB3Tl3lkENP>mQ<@K1Z>I3
+!s100 jA2oo80z485Y[`m712EBm0
+R6
+32
+R40
+!i10b 1
+R41
+R58
+R59
+!i113 1
+R11
+R12
+Emux4to1
+R21
+R1
+R2
+!i122 502
+R3
+Z60 8D:/School/ENEL 453/Lab_3_ENEL453/MUX4TO1.vhd
+Z61 FD:/School/ENEL 453/Lab_3_ENEL453/MUX4TO1.vhd
+l0
+L4 1
+V_4`M>fRMHgJNDCK:17]8a2
+!s100 I1ikPH5U66F;6hFMWOI]>1
+R6
+32
+R40
+!i10b 1
+R41
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/MUX4TO1.vhd|
+Z63 !s107 D:/School/ENEL 453/Lab_3_ENEL453/MUX4TO1.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 7 mux4to1 0 22 _4`M>fRMHgJNDCK:17]8a2
+!i122 502
+l17
+L16 9
+VKFU8PidCja]<Yn9CU]NDY2
+!s100 Q<48lVkHJ1PHSiR9IzFV:2
+R6
+32
+R40
+!i10b 1
+R41
+R62
+R63
+!i113 1
+R11
+R12
+Esavereg
+R0
+R1
+R2
+!i122 503
+R3
+Z64 8D:/School/ENEL 453/Lab_3_ENEL453/Save_Register.vhd
+Z65 FD:/School/ENEL 453/Lab_3_ENEL453/Save_Register.vhd
+l0
+L4 1
+Vk;mRXXm1]9:i<MX0[E2LW2
+!s100 9>]7iY@3jLznlz7b9RFT>0
+R6
+32
+R40
+!i10b 1
+R41
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/Save_Register.vhd|
+Z67 !s107 D:/School/ENEL 453/Lab_3_ENEL453/Save_Register.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 7 savereg 0 22 k;mRXXm1]9:i<MX0[E2LW2
+!i122 503
+l16
+L13 19
+VHgmXUP4igjDOkR3zD@c101
+!s100 _5WmH;D5B@Q?BDhioU=H60
+R6
+32
+R40
+!i10b 1
+R41
+R66
+R67
+!i113 1
+R11
+R12
+Esevensegment
+R0
+R1
+R2
+!i122 504
+R3
+Z68 8D:/School/ENEL 453/Lab_3_ENEL453/SevenSegment.vhd
+Z69 FD:/School/ENEL 453/Lab_3_ENEL453/SevenSegment.vhd
+l0
+L5 1
+VbD[XAzC][MhHDE[[CL3O@3
+!s100 OmVSC`U@3RF?cbR0BYfoK3
+R6
+32
+R40
+!i10b 1
+R41
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/SevenSegment.vhd|
+Z71 !s107 D:/School/ENEL 453/Lab_3_ENEL453/SevenSegment.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 12 sevensegment 0 22 bD[XAzC][MhHDE[[CL3O@3
+!i122 504
+l20
+L11 50
+VZg=eT^T6U1XLQZSJ:@@gb3
+!s100 dcYihQ@U4TXj]105NfLck3
+R6
+32
+R40
+!i10b 1
+R41
+R70
+R71
+!i113 1
+R11
+R12
+Esevensegment_decoder
+R0
+R1
+R2
+!i122 505
+R3
+Z72 8D:/School/ENEL 453/Lab_3_ENEL453/SevenSegment_decoder.vhd
+Z73 FD:/School/ENEL 453/Lab_3_ENEL453/SevenSegment_decoder.vhd
+l0
+L5 1
+VKjE^A[JI58zIZ_l229BiF2
+!s100 5AALkiToOD1k>]CGcBo?e0
+R6
+32
+R40
+!i10b 1
+R41
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/SevenSegment_decoder.vhd|
+Z75 !s107 D:/School/ENEL 453/Lab_3_ENEL453/SevenSegment_decoder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 20 sevensegment_decoder 0 22 KjE^A[JI58zIZ_l229BiF2
+!i122 505
+l17
+L13 41
+Vo=e:lAfD2_^C;7hz[HJKZ0
+!s100 :RKLICMaCA<^S>3gSNgnd0
+R6
+32
+R40
+!i10b 1
+R41
+R74
+R75
+!i113 1
+R11
+R12
+Esync
+R0
+R1
+R2
+!i122 506
+R3
+Z76 8D:/School/ENEL 453/Lab_3_ENEL453/SYNCH.vhd
+Z77 FD:/School/ENEL 453/Lab_3_ENEL453/SYNCH.vhd
+l0
+L4 1
+V5jTV@>[6o@FaU>GiSET4d3
+!s100 Y4?XXjn[>8<L<Uo?9V3e:3
+R6
+32
+R40
+!i10b 1
+R41
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/SYNCH.vhd|
+Z79 !s107 D:/School/ENEL 453/Lab_3_ENEL453/SYNCH.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 4 sync 0 22 5jTV@>[6o@FaU>GiSET4d3
+!i122 506
+l14
+L12 14
+VHaQ1m=6YENenCDSeiBjD@1
+!s100 1TkjJ`D<OWgJ5ca93c^2_3
+R6
+32
+R40
+!i10b 1
+R41
+R78
+R79
+!i113 1
+R11
+R12
+Etb_adc_data
+R0
+R1
+R2
+!i122 507
+R3
+R38
+R39
+l0
+L8 1
+V[?lm[l=lU]Mf^aJ=5DKVD1
+!s100 L7OQmLjBP@S1i0=olKf6?2
+R6
+32
+R40
+!i10b 1
+R41
+R42
+R43
+!i113 1
+R11
+R12
+Atb
+R1
+R2
+R37
+!i122 507
+l36
+L11 64
+V2[P3WYUn^GW[A6j=>UhNJ0
+!s100 4XmK:gNE:_LWeL4ZWVYU91
+R6
+32
+R40
+!i10b 1
+R41
+R42
+R43
+!i113 1
+R11
+R12
+Etb_blanker
+R45
+R1
+R2
+!i122 513
+R3
+R46
+R47
+l0
+L8 1
+V0S<RXQ^Q2SWeV;Qf?nML71
+!s100 SYA<kS9T5[ZP5KLo47PH20
+R6
+32
+R48
+!i10b 1
+R49
+R50
+Z80 !s107 D:/School/ENEL 453/Lab_3_ENEL453/tb_blanker.vhd|
+!i113 1
+R11
+R12
+Atb
+R1
+R2
+R44
+!i122 513
+l29
+Z81 L11 59
+Z82 VgaA>XUV;LTiz0<IaL]n<X0
+Z83 !s100 W>RPonfSVQON=i1:6d3EO1
+R6
+32
+R48
+!i10b 1
+R49
+R50
+R80
+!i113 1
+R11
+R12
+Etb_debounce
+R0
+R1
+R2
+!i122 508
+R3
+Z84 8D:/School/ENEL 453/Lab_3_ENEL453/tb_debounce.vhd
+Z85 FD:/School/ENEL 453/Lab_3_ENEL453/tb_debounce.vhd
+l0
+R24
+VfC6XFVHOhZjf4l8gcO63:1
+!s100 GoKCFGem1>AF?3<JI:R:30
+R6
+32
+R40
+!i10b 1
+R41
+Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/tb_debounce.vhd|
+Z87 !s107 D:/School/ENEL 453/Lab_3_ENEL453/tb_debounce.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 11 tb_debounce 0 22 fC6XFVHOhZjf4l8gcO63:1
+!i122 508
+l43
+L13 130
+Vec]ITQ6cNmbmZNJJ8WC=]1
+!s100 Tdc?DS=FkKPL5:mI4JLB:2
+R6
+32
+R40
+!i10b 1
+R41
+R86
+R87
+!i113 1
+R11
+R12
+Etb_mux2to1
+R0
+R1
+R2
+!i122 509
+R3
+Z88 8D:/School/ENEL 453/Lab_3_ENEL453/tb_MUX2TO1.vhd
+Z89 FD:/School/ENEL 453/Lab_3_ENEL453/tb_MUX2TO1.vhd
+l0
+L8 1
+VnMSZ61K]4ET6<A28WkmOd0
+!s100 SRHCZ<``M05c0Am2cdHg?1
+R6
+32
+R40
+!i10b 1
+R41
+Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/tb_MUX2TO1.vhd|
+Z91 !s107 D:/School/ENEL 453/Lab_3_ENEL453/tb_MUX2TO1.vhd|
+!i113 1
+R11
+R12
+Atb
+R1
+R2
+DEx4 work 10 tb_mux2to1 0 22 nMSZ61K]4ET6<A28WkmOd0
+!i122 509
+l26
+L11 69
+VcVHIRWf__I1OBBfg]DW@?1
+!s100 IzG;SaAT7gYRlfWaUh2OP1
+R6
+32
+R40
+!i10b 1
+R41
+R90
+R91
+!i113 1
+R11
+R12
+Etb_top_level
+Z92 w1605593540
+R1
+R2
+!i122 510
+R3
+Z93 8D:/School/ENEL 453/Lab_3_ENEL453/tb_top_level.vhd
+Z94 FD:/School/ENEL 453/Lab_3_ENEL453/tb_top_level.vhd
+l0
+L8 1
+VzIJcR]GGPS23@TVK:g=SK1
+!s100 2e@ZcHec5JS2MgNF8KA`21
+R6
+32
+R48
+!i10b 1
+R49
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/tb_top_level.vhd|
+Z96 !s107 D:/School/ENEL 453/Lab_3_ENEL453/tb_top_level.vhd|
+!i113 1
+R11
+R12
+Atb
+R1
+R2
+DEx4 work 12 tb_top_level 0 22 zIJcR]GGPS23@TVK:g=SK1
+!i122 510
+l41
+L11 99
+VOb=OzNNMYWgSF<IS2Q@l92
+!s100 T_H@fVPahnZmaa_d:hD^h1
+R6
+32
+R48
+!i10b 1
+R49
+R95
+R96
+!i113 1
+R11
+R12
+Etop_level
+R31
+R15
+R1
+R2
+!i122 511
+R3
+Z97 8D:/School/ENEL 453/Lab_3_ENEL453/top_level.vhd
+Z98 FD:/School/ENEL 453/Lab_3_ENEL453/top_level.vhd
+l0
+L5 1
+VjD@@KSb;L;]BB>@]j@>go3
+!s100 Y`NoJlOY<RRhQFMmnVah:0
+R6
+32
+R48
+!i10b 1
+R49
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/top_level.vhd|
+Z100 !s107 D:/School/ENEL 453/Lab_3_ENEL453/top_level.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R15
+R1
+R2
+DEx4 work 9 top_level 0 22 jD@@KSb;L;]BB>@]j@>go3
+!i122 511
+l110
+L17 212
+Va^WaZGHWK85<<T6_O>3l21
+!s100 RK[WO;?zYL;?TF`DKU=W>0
+R6
+32
+R48
+!i10b 1
+R49
+R99
+R100
+!i113 1
+R11
+R12
+Evoltage2distance_array2
+R0
+Z101 DPx4 work 7 lut_pkg 0 22 3zf[5<SOEBfYf_QVY@Zd=0
+R15
+R1
+R2
+!i122 512
+R3
+Z102 8D:/School/ENEL 453/Lab_3_ENEL453/voltage2distance_array2.vhd
+Z103 FD:/School/ENEL 453/Lab_3_ENEL453/voltage2distance_array2.vhd
+l0
+L24 1
+V=NDCVZciz^K^bX6GaO`oT3
+!s100 `A`mdf8ondemfJ_=[hYQd1
+R6
+32
+R48
+!i10b 1
+R49
+Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/ENEL 453/Lab_3_ENEL453/voltage2distance_array2.vhd|
+Z105 !s107 D:/School/ENEL 453/Lab_3_ENEL453/voltage2distance_array2.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R101
+R15
+R1
+R2
+DEx4 work 23 voltage2distance_array2 0 22 =NDCVZciz^K^bX6GaO`oT3
+!i122 512
+l35
+L32 11
+VEeH?6UUEXf92ElUkXFl4d3
+!s100 [6Lk_@eYiRP^?7Woz^lK[0
+R6
+32
+R48
+!i10b 1
+R49
+R104
+R105
+!i113 1
+R11
+R12
